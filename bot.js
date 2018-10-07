@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.post('/texify', texify);
 
-app.listen(4747);
+app.listen(process.env.PORT || 4747);
 
 if (process.env.DEBUG) {
   let localtunnel = require('localtunnel');
