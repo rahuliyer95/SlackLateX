@@ -6,12 +6,7 @@
 
 ### Setup:
 1. Clone/download this repository.
-2. Install required modules in the project folder with:
-    ```
-    npm install fs
-    npm install request
-    npm install websocket
-    ```
+2. Install required modules in the project folder with `npm install` or `yarn install`
 3. Set the `SLACK_TOKEN` env var or Create a `secret.txt` file in the bot directory and put your slack token in it.
 4. Set `DEBUG=true` env var for debugging.
 5. Start bot by running `node bot.js` or `nodejs bot.js`
