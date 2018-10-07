@@ -1,0 +1,30 @@
+{
+  "name": "slacklatex",
+  "version": "1.0.0",
+  "description": "Bot to convert LateX code in messages into images.",
+  "main": "bot.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sand500/SlackLateX.git"
+  },
+  "author": "",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/sand500/SlackLateX/issues"
+  },
+  "homepage": "https://github.com/sand500/SlackLateX#readme",
+  "scripts": {
+    "prettier": "prettier --single-quote --write bot.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "fs": "^0.0.1-security",
+    "request": "^2.88.0",
+    "websocket": "^1.0.28"
+  },
+  "devDependencies": {
+    "localtunnel": "^1.9.1",
+    "prettier": "^1.14.3"
+  }
+}
