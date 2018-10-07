@@ -1,5 +1,4 @@
 let request = require('request');
-let localtunnel = require('localtunnel');
 let express = require('express');
 let bodyParser = require('body-parser');
 let app = express();
@@ -10,6 +9,7 @@ app.post('/texify', texify);
 app.listen(4747);
 
 if (process.env.DEBUG) {
+  let localtunnel = require('localtunnel');
   let tunnel = localtunnel(4747, { subdomain: 'slacklatex' }, function(err, t) {
     if (err) {
       throw err;
